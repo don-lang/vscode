@@ -1,0 +1,57 @@
+{
+    "name": "don-lang",
+    "displayName": "DON",
+    "description": "DON Language support",
+    "author": "Ravi Teja Gudapati <tejainece@gmail.com>",
+    "icon": "icon.png",
+    "version": "1.5.0",
+    "publisher": "tejainece",
+    "license": "BSD",
+    "homepage": "https://github.com/tejainece/don",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/tejainece/don"
+    },
+    "bugs": {
+      "url": "https://github.com/tejainece/don/issues",
+      "email": "tejainece@gmail.com"
+    },
+    "engines": {
+      "vscode": "^1.18.0"
+    },
+    "categories": [
+      "Programming Languages"
+    ],
+    "keywords": [
+      "don"
+    ],
+    "activationEvents": [
+      "onLanguage:don"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+      "languages": [
+        {
+          "id": "don",
+          "aliases": [
+            "DON",
+            "don"
+          ],
+          "extensions": [
+            ".don"
+          ],
+          "mimetypes": [
+            "text/x-don"
+          ],
+          "configuration": "./language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "don",
+          "scopeName": "source.don",
+          "path": "./syntaxes/don.tmLanguage.yaml"
+        }
+      ]
+    }
+  }
